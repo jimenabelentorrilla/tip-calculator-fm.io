@@ -1,0 +1,100 @@
+:root{
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    margin: 50px;
+  }
+  .card-blanca{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:15px;
+  }
+  .subcard-verde{
+    background-color: var(--VeryDarkCyan);
+    border-radius: 16px;
+    padding: 25px;
+  }
+  .valores-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+  }
+  .val-text p{
+    color: var(--White);
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .val-text span{
+    color: var(--VeryLightGrayishCyan);
+    font-size: 12px;
+  }
+  .val-cyan{
+    font-size: 30px;
+    color: var(--StrongCyan);
+  }
+  .btn-percent{
+    padding: 8px 30px;
+    border: none;
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+    border-radius: 8px;
+  }
+  .btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+  }
+  .subcard-blanca{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .input{
+    background-color: var(--VeryLightGrayishCyan);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .input input{
+    background-color: var(--VeryLightGrayishCyan);
+    border: none;
+  }
+  .bill p, .select p, .number p{
+    color: var(--DarkGrayishCyan);
+  }
+  .valores{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .button button {
+    padding: 8px 110px;
+    background-color: var(--GrayishCyan);
+    border: none;
+    color: var(--DarkGrayishCyan);
+    border-radius: 6px;
+  }
+  .button button:hover, 
+  .btns button:hover {
+    background-color: var(--LightGrayishCyan);
+    color: var(--VeryDarkCyan);
+  }

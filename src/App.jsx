@@ -24,22 +24,21 @@ function App() {
       const calculatedTotal = (parseFloat(inputBill) + (calculatedTip * inputPerson)) ;
       settipAmount(calculatedTip);
       settotalPerson(calculatedTotal);
-  } else {
-    settipAmount(0);
-    settotalPerson(0);
-  }
+    } else {
+      settipAmount(0);
+      settotalPerson(0);
+    }
   }, [inputBill, inputPerson, percent]);
 
-  return (
-    <>
-    <form >
+return (
+  <>
+    <form>
       <div className='container'>
         <div>
           <img src={Logo}/>
         </div>
-        <div></div>
         <div className='card-blanca'>
-          <div className='subcard-blanca'>
+          <div className='subcard-blanca' >
             <div className='bill'>
               <p>Bill</p>
               <div className='input'>
@@ -56,7 +55,6 @@ function App() {
               </div>
             </div>
             <div className='select'>
-              <p> </p>
               <div className='btns'> 
                 <button
                 className="btn-percent" 
@@ -146,8 +144,8 @@ function App() {
       </div>
     </form>
       
-    </>
+  </>
   )
 }
 
-export default App
+export default App;

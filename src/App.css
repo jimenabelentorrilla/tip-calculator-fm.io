@@ -98,3 +98,11 @@
     background-color: var(--LightGrayishCyan);
     color: var(--VeryDarkCyan);
   }
+
+  @media (width < 767px ) {
+    .card-blanca{
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
